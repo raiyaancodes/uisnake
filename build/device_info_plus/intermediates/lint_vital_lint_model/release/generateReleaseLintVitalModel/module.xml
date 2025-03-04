@@ -1,0 +1,29 @@
+<lint-module
+    format="1"
+    dir="/Users/macbookpro/.pub-cache/hosted/pub.dev/device_info_plus-11.3.0/android"
+    name=":device_info_plus"
+    type="LIBRARY"
+    maven="dev.fluttercommunity.plus.device_info:device_info_plus:"
+    agpVersion="8.3.2"
+    buildFolder="/Users/macbookpro/Downloads/colors_test/build/device_info_plus"
+    bootClassPath="/Users/macbookpro/Library/Android/sdk/platforms/android-34/android.jar:/Users/macbookpro/Library/Android/sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      disable="InvalidPackage,MissingPermission"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="InvalidPackage"
+        severity="IGNORE" />
+      <severity
+        id="MissingPermission"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="release"/>
+</lint-module>
