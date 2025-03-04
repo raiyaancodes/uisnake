@@ -1,1 +1,0 @@
- /Users/macbookpro/Downloads/colors_test/.dart_tool/flutter_build/d8491f1f0e18f20375543626caeeefb3/native_assets.yaml: 
