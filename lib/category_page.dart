@@ -26,12 +26,6 @@ class CategoryPage extends StatelessWidget {
         'isCamera': true,
       },
       {
-        'title': 'Improve Your UI',
-        'icon': Icons.auto_fix_high,
-        'description': 'Get AI suggestions to enhance your design',
-        'isDesignSystem': true,
-      },
-      {
         'title': 'Mobile App',
         'icon': Icons.phone_android,
         'description': 'Design elements for mobile applications',
@@ -61,6 +55,12 @@ class CategoryPage extends StatelessWidget {
         'icon': Icons.dashboard,
         'description': 'Interface and experience design elements',
       },
+      {
+        'title': 'Improve Your UI',
+        'icon': Icons.auto_fix_high,
+        'description': 'Get AI suggestions to enhance your design',
+        'isDesignSystem': true,
+      },
     ];
 
     return Scaffold(
@@ -73,14 +73,36 @@ class CategoryPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    'What are you\ndesigning today?',
-                    style: GoogleFonts.inter(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                      color: isDark ? Colors.white : Colors.black87,
-                      height: 1.2,
-                    ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.auto_awesome,
+                            size: 40,
+                            color: isDark ? Colors.white : Colors.black87,
+                          ),
+                          const SizedBox(width: 8),
+                          Text(
+                            'UISerpent',
+                            style: GoogleFonts.inter(
+                              fontSize: 32,
+                              fontWeight: FontWeight.bold,
+                              color: isDark ? Colors.white : Colors.black87,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 8),
+                      Text(
+                        'Choose a category to get started',
+                        style: GoogleFonts.inter(
+                          fontSize: 16,
+                          color: isDark ? Colors.white70 : Colors.black54,
+                        ),
+                      ),
+                    ],
                   ),
                   IconButton(
                     icon: Icon(
