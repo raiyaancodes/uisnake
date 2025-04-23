@@ -56,7 +56,7 @@ class CategoryPage extends StatelessWidget {
         'description': 'Interface and experience design elements',
       },
       {
-        'title': 'Improve Your UI',
+        'title': 'Improve Your Design',
         'icon': Icons.auto_fix_high,
         'description': 'Get AI suggestions to enhance your design',
         'isDesignSystem': true,
